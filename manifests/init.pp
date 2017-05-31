@@ -33,6 +33,7 @@ class postfix (
   $recipient                = "admin@${::domain}",
   $relayhost                = "smtp.${::domain}",
   $relayport                = 25,
+  $mynetworks               = "127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128",
   $sasl_user                = undef,
   $sasl_pass                = undef,
 ) inherits ::postfix::params {

@@ -315,6 +315,11 @@ to "smtp.${::domain}".
 Determines which port should be used as relayhost for outgoing emails. Defaults
 to '25'.
 
+#### `mynetworks`
+
+Determines which networks should be used for outgoing emails. Defaults
+to "127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128".
+
 #### `sasl_user`
 
 Determines which user should be used for authentication with the relayhost.
